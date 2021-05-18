@@ -1,13 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const storeRouter = require('./routers/stores/index.js')
-const productsRouter = require('./routers/products/index.js')
+const Product = require('./src/models/product');
+const Store = require('./src/models/store');
+const storeRouter = require('./src/routers/stores/index.js')
+const productsRouter = require('./src/routers/products/index.js')
 
-mongoose.connect('mongodb://localhost:27017/Stores-app', {
-    userNewUrlPrase: true,
-    useCreateIndex: true
-})
+require('./src/db/mongoose')
+
 
 app.use(express.json())
 

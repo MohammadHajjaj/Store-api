@@ -1,8 +1,8 @@
 const request = require("supertest")
 const app = require('../app')
 const mongoose = require('mongoose')
-const Product = require("../models/product")
-const Store = require("../models/store")
+const Product = require("../src/models/product")
+const Store = require("../src/models/store")
 
 const {
     storeOneId,

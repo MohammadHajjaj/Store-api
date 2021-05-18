@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const Store = require('../../models/store')
-const Product = require('../../models/product')
+const Store = require('../../src/models/store')
+const Product = require('../../src/models/product')
 
 const storeOneId = new mongoose.Types.ObjectId()
 const storeOne = {

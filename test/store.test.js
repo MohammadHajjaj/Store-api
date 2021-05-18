@@ -1,6 +1,6 @@
 const request = require("supertest")
 const app = require('../app')
-const Store = require('../models/Store')
+const Store = require('../src/models/Store')
 const mongoose = require('mongoose')
 const { storeOneId, storeOne, setUpDb } = require("./fixtures/db")
 
